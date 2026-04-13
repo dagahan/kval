@@ -1,0 +1,4 @@
+/home/nikita/myprojects/kval/varieties/20/DEMO/dist/DEMO.pdb
+/home/nikita/myprojects/kval/varieties/20/DEMO/dist/libHarfBuzzSharp.so
+/home/nikita/myprojects/kval/varieties/20/DEMO/dist/libSkiaSharp.so
+/home/nikita/myprojects/kval/varieties/20/DEMO/dist/DEMO
