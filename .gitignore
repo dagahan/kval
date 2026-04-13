@@ -1,0 +1,31 @@
+# Ignore everything by default
+*
+
+# Keep repo-level config
+!/.gitignore
+!/global.json
+
+# Keep project tree only
+!/DEMO/
+/DEMO/*
+!/DEMO/DEMO/
+/DEMO/DEMO/*
+
+# Keep solution and source project
+!/DEMO/DEMO/DEMO.sln
+!/DEMO/DEMO/DEMO/
+
+# Inside source project: ignore all then allow source structure
+/DEMO/DEMO/DEMO/*
+!/DEMO/DEMO/DEMO/**/
+
+# Allow source code and project metadata
+!/DEMO/DEMO/DEMO/**/*.cs
+!/DEMO/DEMO/DEMO/**/*.axaml
+!/DEMO/DEMO/DEMO/**/*.csproj
+!/DEMO/DEMO/DEMO/**/*.manifest
+!/DEMO/DEMO/DEMO/Assets/**
+
+# Exclude build artifacts and caches
+/DEMO/DEMO/DEMO/bin/
+/DEMO/DEMO/DEMO/obj/
