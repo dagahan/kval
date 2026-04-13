@@ -1,0 +1,32 @@
+<!-- Вариант 03 -->
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:DEMO.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        x:Class="DEMO.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        mc:Ignorable="d"
+        d:DesignWidth="800"
+        d:DesignHeight="450"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="Валидация данных">
+
+    <Grid RowDefinitions="*, *" ColumnDefinitions="*, *">
+        <Button Command="{Binding GetFioCommand}" Content="Получить данные"
+                Grid.Column="0" Grid.Row="0"
+                VerticalAlignment="Center" HorizontalAlignment="Stretch"
+                HorizontalContentAlignment="Center" Margin="10"/>
+
+        <Button Command="{Binding SendTestResultCommand}" Content="Отправить результат теста"
+                Grid.Column="0" Grid.Row="1"
+                VerticalAlignment="Center" HorizontalAlignment="Stretch"
+                HorizontalContentAlignment="Center" Margin="10"/>
+
+        <TextBlock Text="{Binding FIO}" Grid.Column="1" Grid.Row="0"
+                   VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10"/>
+
+        <TextBlock Text="{Binding Result}" Grid.Column="1" Grid.Row="1"
+                   VerticalAlignment="Center" HorizontalAlignment="Left" Margin="10"/>
+    </Grid>
+</Window>
